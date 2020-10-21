@@ -18,6 +18,7 @@ app.get('/health', (req, res) => {
 
 app.post('/vote', (req, res) => {
     dbhelper.submitVote('A');
+    dbhelper.submitVote(req.body.choice);
     res.send('Vote Submitted');
 })
 
