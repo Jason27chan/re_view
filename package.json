@@ -1,0 +1,22 @@
+{
+  "name": "re_view",
+  "version": "1.0.0",
+  "description": "Vote for A, B, or C",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason27chan/re_view.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jason27chan/re_view/issues"
+  },
+  "homepage": "https://github.com/Jason27chan/re_view#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
