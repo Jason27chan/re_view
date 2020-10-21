@@ -1,4 +1,8 @@
 const express = require('express');
+
+const dbclass = require('./dbhelper');
+
+const dbhelper = new dbclass();
 const app = express();
 const port = 3000;
 
@@ -7,6 +11,7 @@ app.get('/health', (req, res) => {
 });
 
 app.post('/vote', (req, res) => {
+    dbhelper.submitVote('A');
     res.send('Vote Submitted');
 })
 
