@@ -2,10 +2,9 @@ const express = require('express');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
-const dbclass = require('./dbhelper');
+const dbhelper = require('./dbhelper');
 const keys = require('./config/keys');
 
-const dbhelper = new dbclass();
 const app = express();
 const port = 5000;
 

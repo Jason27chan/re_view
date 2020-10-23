@@ -21,4 +21,4 @@ class dbhelper {
     }
 }
 
-module.exports = dbhelper;
+module.exports = new dbhelper();
