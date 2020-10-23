@@ -5,7 +5,7 @@ $(function() {
         $.post("http://localhost:5000/vote", {choice: $(this).attr('value')}, function() {
             console.log('done');
             $(".loading-gif").hide();
-
+            $(location).attr('href', "/vote_submitted");
         });
     });
 });
